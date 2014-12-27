@@ -40,12 +40,10 @@ var respx = sendRequest({
    accessor: accessor,
    parameters: null
 }); 
-response.object = <twu>{respx.json}</twu>;
-//y.log(respx);
-y.log(respx.json);
+response.object = <twu>3daysaloft</twu>;
  for each(im in respx.json)
  {
- y.log(im);
+ y.log(typeof im);
  }
 				]]>
 			</execute>
