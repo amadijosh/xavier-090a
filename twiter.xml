@@ -39,7 +39,9 @@ response.object = sendRequest({
    method: 'GET',
    accessor: accessor,
    parameters: null
-}).json; 				]]>
+}); 		
+response.object = response.object.json;
+]]>
 			</execute>
 		</select>
 	</bindings>
