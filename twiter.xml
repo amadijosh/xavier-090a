@@ -44,8 +44,8 @@ var respx = sendRequest({
  y.log(im.text);
  im.appendChild(<editted>{im.text + " jiksa"}</editted>);
  }
- response.object = respx.toString();
- y.log(result);
+ response.object = respx;
+ y.log(response.headers);
  y.log(response.object)
 				]]>
 			</execute>
