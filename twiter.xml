@@ -39,7 +39,7 @@ response.object = sendRequest({
    method: 'GET',
    accessor: accessor,
    parameters: null
-}); y.log(response.object);
+}).json; y.log(response.object);
 				]]>
 			</execute>
 		</select>
