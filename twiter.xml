@@ -40,10 +40,10 @@ var respx = sendRequest({
    accessor: accessor,
    parameters: null
 }); 
-response.object = <twu>3daysaloft</twu>;
+response.object = <twu><a>{Math.random()}</a><a>{Math.random()}</a></twu>;
  for each(im in respx.json)
  {
- y.log(typeof im);
+ y.log(im.created_at);
  }
 				]]>
 			</execute>
