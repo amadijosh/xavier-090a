@@ -40,7 +40,7 @@ var respx = sendRequest({
    parameters: null
 }); 
   
- response.object = respx.json;
+ response.object = <response><a> bygone </a><a>bukky</a> </response>;
  y.log(response.object);
 				]]>
 			</execute>
