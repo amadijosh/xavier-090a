@@ -34,12 +34,15 @@ accessor.realm = request.url;
 accessor.token = oauth_token;
 accessor.tokenSecret = oauth_token_secret;
 
-response.object = sendRequest({
+var respx = sendRequest({
    action: request.url,
    method: 'GET',
    accessor: accessor,
    parameters: null
-}).json; y.log(response.object);
+}).json; 
+response.object = respx;
+y.log(respx);
+y.log(respx.json);
 				]]>
 			</execute>
 		</select>
