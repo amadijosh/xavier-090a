@@ -40,7 +40,7 @@ var respx = sendRequest({
    accessor: accessor,
    parameters: null
 }); 
-response.object = respx;
+response.object = respx.json;
  for each(im in respx.json)
  {
  y.log(im.created_at);
