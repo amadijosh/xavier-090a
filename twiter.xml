@@ -80,7 +80,7 @@ function getRequest(args)
    var rsp = null;
    try {
       if(auth) request.header('Authorization', auth.header);
-      rsp = request.contentType('application/json').get().response; y.log(rsp);
+      rsp = request.contentType('application/xml').get().response; y.log(rsp);
    } catch(err) {
       rsp = {'result':'failure', 'error': err};
    }
@@ -101,8 +101,7 @@ var respx = sendRequest({
    parameters: null
 }); 
   
- response.object = respx;
- //y.log(response.object);
+ response.object = respx; 
 				]]>
 			</execute>
 		</select>
