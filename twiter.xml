@@ -41,6 +41,7 @@ var respx = sendRequest({
 }); 
   
  response.object = respx;
+ y.log(response.object);
 				]]>
 			</execute>
 		</select>
