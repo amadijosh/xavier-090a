@@ -101,7 +101,13 @@ var respx = sendRequest({
    parameters: null
 }); 
  var results = <results></results>;
- results.appendChild(respx.json);
+ for each(im in respx.json)
+ {
+  var tweet = <tweet></tweet>;
+  tweet.appendChild(im);
+  results.appendChild(tweet);
+ }
+ 
  y.log(results);
  response.object = results; 
 				]]>
