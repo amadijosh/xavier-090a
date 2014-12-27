@@ -39,12 +39,8 @@ var respx = sendRequest({
    accessor: accessor,
    parameters: null
 }); 
- for each(im in respx.json)
- {
- y.log(im.text);
- im.appendChild(<editted>{im.text + " jiksa"}</editted>);
- }
- response.object = <restaurants><italian><name>Tony's</name><name>Mangano's</name></italian><chinese><name>Chef Hu's</name><name>Hunan Garden</name></chinese></restaurants>;
+  
+ response.object = respx;
 				]]>
 			</execute>
 		</select>
