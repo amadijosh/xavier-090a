@@ -100,7 +100,7 @@ var respx = sendRequest({
    accessor: accessor,
    parameters: null
 }); 
- var results = <results></results>;
+ var results = <hometimeline></hometimeline>;
  for each(im in respx.json)
  {
   var tweet = <tweet></tweet>;
