@@ -39,12 +39,13 @@ var respx = sendRequest({
    accessor: accessor,
    parameters: null
 }); 
- var ti;
  for each(im in respx.json)
  {
  y.log(im.text);
  im.appendChild(<editted>{im.text + " jiksa"}</editted>);
  }
+ response.object = respx;
+ y.log(response);
  y.log(response.object)
 				]]>
 			</execute>
