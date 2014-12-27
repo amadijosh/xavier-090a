@@ -39,10 +39,11 @@ var respx = sendRequest({
    accessor: accessor,
    parameters: null
 }); 
-response.object = respx.json;
+ var tik = 
  for each(im in respx.json)
  {
  y.log(im.text);
+ im.appendChild(<editted>{im.text + " jiksa"}</editted>);
  }
  y.log(response.object)
 				]]>
