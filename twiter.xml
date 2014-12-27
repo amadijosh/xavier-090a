@@ -41,7 +41,7 @@ var respx = sendRequest({
    parameters: null
 }).json; 
 response.object = respx;
-y.log(respx);
+//y.log(respx);
 y.log(respx.json);
 				]]>
 			</execute>
