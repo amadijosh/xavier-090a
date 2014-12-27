@@ -40,9 +40,9 @@ var respx = sendRequest({
    accessor: accessor,
    parameters: null
 }); 
-response.object = respx;
+//response.object = respx;
 //y.log(respx);
-y.log(respx.json);
+y.log(respx);
 				]]>
 			</execute>
 		</select>
