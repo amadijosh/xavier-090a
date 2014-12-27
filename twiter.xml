@@ -32,7 +32,7 @@ accessor.consumerSecret = oauth_consumer_secret;
 accessor.realm = request.url;
 accessor.token = oauth_token;
 accessor.tokenSecret = oauth_token_secret;
-request.contentType('application/xml');
+ 
 var respx = sendRequest({
    action: request.url,
    method: 'GET',
@@ -45,7 +45,7 @@ var respx = sendRequest({
  im.appendChild(<editted>{im.text + " jiksa"}</editted>);
  }
  response.object = respx.toString();
- y.log(response);
+ y.log(result);
  y.log(response.object)
 				]]>
 			</execute>
