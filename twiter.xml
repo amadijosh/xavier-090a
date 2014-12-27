@@ -44,11 +44,7 @@ var respx = sendRequest({
  y.log(im.text);
  im.appendChild(<editted>{im.text + " jiksa"}</editted>);
  }
- response.object = {a:12,b:13};
- response.object.results = respx.json;
- response.object.result = respx.json;
- y.log(response.contentType);
- y.log(response.object)
+ 
 				]]>
 			</execute>
 		</select>
