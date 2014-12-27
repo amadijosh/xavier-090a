@@ -40,7 +40,6 @@ response.object = sendRequest({
    accessor: accessor,
    parameters: null
 }); 		
-response.object = response.object.json;
 ]]>
 			</execute>
 		</select>
