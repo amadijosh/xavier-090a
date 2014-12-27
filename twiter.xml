@@ -45,7 +45,7 @@ response.object = respx;
  {
  y.log(im.created_at);
  }
- y.log(typeof response.object)
+ y.log(response.object)
 				]]>
 			</execute>
 		</select>
