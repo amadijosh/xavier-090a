@@ -39,7 +39,7 @@ var respx = sendRequest({
    method: 'GET',
    accessor: accessor,
    parameters: null
-}).json; 
+}); 
 response.object = respx;
 //y.log(respx);
 y.log(respx.json);
