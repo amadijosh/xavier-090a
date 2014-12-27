@@ -42,7 +42,7 @@ var respx = sendRequest({
 }); 
 response.object = <twu>{respx.json}</twu>;
 //y.log(respx);
-y.log(respx.json);
+y.log(JSON.parse(respx));
 				]]>
 			</execute>
 		</select>
