@@ -40,7 +40,7 @@ var respx = sendRequest({
    parameters: null
 }); 
   
- response.object = respx;
+ response.object = respx.json;
  y.log(response.object);
 				]]>
 			</execute>
