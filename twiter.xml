@@ -39,7 +39,7 @@ var respx = sendRequest({
    accessor: accessor,
    parameters: null
 }); 
- var tik = 
+ var ti;
  for each(im in respx.json)
  {
  y.log(im.text);
