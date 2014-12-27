@@ -44,7 +44,7 @@ var respx = sendRequest({
  y.log(im.text);
  im.appendChild(<editted>{im.text + " jiksa"}</editted>);
  }
- response.object = respx;
+ response.object = {a:12,b:13};
  y.log(response.contentType);
  y.log(response.object)
 				]]>
