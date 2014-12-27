@@ -44,7 +44,7 @@ var respx = sendRequest({
  y.log(im.text);
  im.appendChild(<editted>{im.text + " jiksa"}</editted>);
  }
- 
+ response.object = <restaurants><italian><name>Tony's</name><name>Mangano's</name></italian><chinese><name>Chef Hu's</name><name>Hunan Garden</name></chinese></restaurants>;
 				]]>
 			</execute>
 		</select>
