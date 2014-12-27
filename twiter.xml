@@ -40,11 +40,12 @@ var respx = sendRequest({
    accessor: accessor,
    parameters: null
 }); 
-response.object = <twu><a>{Math.random()}</a><a>{Math.random()}</a></twu>;
+response.object = respx;
  for each(im in respx.json)
  {
  y.log(im.created_at);
  }
+ y.log(typeof response.object)
 				]]>
 			</execute>
 		</select>
