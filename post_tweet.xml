@@ -9,7 +9,7 @@
 	<bindings>
 		<select itemPath="" produces="JSON">
 			<urls>
-				<url>https://api.twitter.com/1.1/statuses/home_timeline.json</url>
+				<url>https://api.twitter.com/1.1/statuses/update.json</url>
 			</urls>
 			<inputs>
 				<key id="status" type="xs:string" paramType="query" required="true"/>
@@ -17,7 +17,11 @@
 				<key id="possibly_sensitive" type="xs:string" paramType="query" required="false"/>
 				<key id="lat" type="xs:string" paramType="query" required="false"/>
 				<key id="long" type="xs:string" paramType="query" required="false"/> 
-				<key id="place_id" type="xs:string" paramType="query" required="false"/> display_coordinates trim_user media_ids
+				<key id="place_id" type="xs:string" paramType="query" required="false"/>
+				<key id="display_coordinates" type="xs:string" paramType="query" required="false"/>
+				<key id="trim_user" type="xs:string" paramType="query" required="false"/>
+				<key id="media_ids" type="xs:string" paramType="query" required="false"/>
+				  
 				
 				<key id="oauth_consumer_key" type="xs:string" paramType="variable" required="true"/>
 				<key id="oauth_consumer_secret" type="xs:string" paramType="variable" required="true"/>
@@ -36,7 +40,7 @@ accessor.token = oauth_token;
 accessor.tokenSecret = oauth_token_secret;
 response.object = sendRequest({
    action: request.url,
-   method: 'GET',
+   method: 'POST',
    accessor: accessor,
    parameters: null
 }); 
