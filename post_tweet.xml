@@ -13,15 +13,10 @@
 			</urls>
 			<inputs>
 				<key id="status" type="xs:string" paramType="variable" required="true"/>
-				<key id="in_reply_to_status_id" type="xs:string" paramType="variable" required="false"/>
-				<key id="possibly_sensitive" type="xs:string" paramType="variable" required="false"/>
-				<key id="lat" type="xs:string" paramType="variable" required="false"/>
-				<key id="long" type="xs:string" paramType="variable" required="false"/> 
-				<key id="place_id" type="xs:string" paramType="variable" required="false"/>
-				<key id="display_coordinates" type="xs:string" paramType="variable" required="false"/>
-				<key id="trim_user" type="xs:string" paramType="variable" required="false"/>
-				<key id="media_ids" type="xs:string" paramType="variable" required="false"/>
-				  
+				<key id="max_id" type="xs:string" paramType="query" required="false"/>
+				<key id="count" type="xs:string" paramType="query" required="false"/>
+				<key id="page" type="xs:string" paramType="query" required="false"/>
+				<key id="entities" type="xs:string" paramType="query" required="false"/> 
 				
 				<key id="oauth_consumer_key" type="xs:string" paramType="variable" required="true"/>
 				<key id="oauth_consumer_secret" type="xs:string" paramType="variable" required="true"/>
