@@ -26,7 +26,7 @@
 			<execute>
 				<![CDATA[
 y.include("http://www.datatables.org/oauth/oauth.utils.js");
-request.contentType('application/json');
+//request.contentType('application/json');
 var accessor = {};
 accessor.consumerKey = oauth_consumer_key;
 accessor.consumerSecret = oauth_consumer_secret;
