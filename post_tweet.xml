@@ -42,7 +42,7 @@ response.object = sendRequest({
    action: request.url,
    method: 'POST',
    accessor: accessor,
-   parameters: {status:status}
+   parameters: {"status":status}
 }); 
 ]]>
 			</execute>
