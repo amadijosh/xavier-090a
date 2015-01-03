@@ -38,11 +38,15 @@ accessor.consumerSecret = oauth_consumer_secret;
 accessor.realm = request.url;
 accessor.token = oauth_token;
 accessor.tokenSecret = oauth_token_secret;
+var params = [];
+params.push(["status",status]);
+if(in_reply_to_status_id && in_reply_to_status_id !== "")
+params.push(["in_reply_to_status_id",in_reply_to_status_id]);
 response.object = sendRequest({
    action: request.url,
    method: 'POST',
    accessor: accessor,
-   parameters: [["status",status]]
+   parameters: params
 }); 
 ]]>
 			</execute>
