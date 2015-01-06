@@ -27,6 +27,14 @@
 y.include("http://www.datatables.org/oauth/oauth.utils.js");
 //request.contentType('application/json');
 var accessor = {};
+var params = [];
+params.push(["id",tweet_id]);
+if(include_entities && include_entities !== "")
+params.push(["include_entities",include_entities]);
+
+if(action && action !== "")
+params.push(["action",action]);
+
 accessor.consumerKey = oauth_consumer_key;
 accessor.consumerSecret = oauth_consumer_secret;
 accessor.realm = request.url;
@@ -36,7 +44,7 @@ response.object = sendRequest({
    action: request.url,
    method: 'POST',
    accessor: accessor,
-   parameters: [["id",tweet_id]]
+   parameters:params
 }); 
 ]]>
 			</execute>
