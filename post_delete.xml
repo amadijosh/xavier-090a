@@ -31,11 +31,15 @@ accessor.consumerSecret = oauth_consumer_secret;
 accessor.realm = request.url;
 accessor.token = oauth_token;
 accessor.tokenSecret = oauth_token_secret;
+var params = [];  
+if(include_entities && include_entities !== "")
+params.push(["include_entities",include_entities]);
+
 response.object = sendRequest({
    action: request.url,
    method: 'POST',
    accessor: accessor,
-   parameters: null
+   parameters: params
 }); 
 ]]>
 			</execute>
