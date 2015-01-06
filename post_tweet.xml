@@ -46,7 +46,10 @@ response.object = sendRequest({
    action: request.url,
    method: 'POST',
    accessor: accessor,
-   parameters: params
+   parameters: [["status",status],["in_reply_to_status_id",in_reply_to_status_id],
+   ["possibly_sensitive",possibly_sensitive],["lat",lat],["long",long],["place_id",place_id],
+   ["display_coordinates",display_coordinates],["trim_user",trim_user],["media_ids",media_ids]
+   ]
 }); 
 ]]>
 			</execute>
