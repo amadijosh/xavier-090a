@@ -38,18 +38,39 @@ accessor.consumerSecret = oauth_consumer_secret;
 accessor.realm = request.url;
 accessor.token = oauth_token;
 accessor.tokenSecret = oauth_token_secret;
-var params = [];
+var params = []; 
+
 params.push(["status",status]);
+
 if(in_reply_to_status_id && in_reply_to_status_id !== "")
 params.push(["in_reply_to_status_id",in_reply_to_status_id]);
+
+if(possibly_sensitive && possibly_sensitive !== "")
+params.push(["possibly_sensitive",possibly_sensitive]);
+
+if(lat && lat !== "")
+params.push(["lat",lat]);
+
+if(long && long !== "")
+params.push(["long",long]);
+
+if(place_id && place_id !== "")
+params.push(["place_id",place_id]);
+
+if(display_coordinates && display_coordinates !== "")
+params.push(["display_coordinates",display_coordinates]);
+
+if(trim_user && trim_user !== "")
+params.push(["trim_user",trim_user]);
+
+if(media_ids && media_ids !== "")
+params.push(["media_ids",media_ids]);
+
 response.object = sendRequest({
    action: request.url,
    method: 'POST',
    accessor: accessor,
-   parameters: [["status",status],["in_reply_to_status_id",in_reply_to_status_id],
-   ["possibly_sensitive",possibly_sensitive],["lat",lat],["long",long],["place_id",place_id],
-   ["display_coordinates",display_coordinates],["trim_user",trim_user],["media_ids",media_ids]
-   ]
+   parameters: params
 }); 
 ]]>
 			</execute>
